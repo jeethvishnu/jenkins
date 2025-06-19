@@ -60,11 +60,10 @@ pipeline {
         always { 
             echo 'I will always say Hello again!'
         }
-    }
-    success {
-        echo 'will run when it is success'
-    }
-    failure {
-        echo 'will run when its failed'
-    }
+        success {
+            echo 'will run when it is success'
+        }
+        failure {
+            echo 'will run when its failed'
+        }
 }
