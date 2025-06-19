@@ -18,8 +18,8 @@ pipeline {
         password(name: 'PASSWORD', defaultValue: 'SECRET', description: 'Enter a password')
     }
     environment {
-        DEPLOY_TO : 'production'
-        GREETING : 'good morning'
+        DEPLOY_TO = 'production'
+        GREETING = 'good morning'
     }
     stages {
         stage('Build') {
