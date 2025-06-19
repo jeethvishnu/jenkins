@@ -34,5 +34,16 @@ pipeline {
                 sh 'echo deploying'
             }
         }
+        stage('print params'){
+              echo "Hello ${params.PERSON}"
+
+                echo "Biography: ${params.BIOGRAPHY}"
+
+                echo "Toggle: ${params.TOGGLE}"
+
+                echo "Choice: ${params.CHOICE}"
+
+                echo "Password: ${params.PASSWORD}"
+        }
     }
 }
