@@ -35,8 +35,7 @@ stages {
             sh 'echo deploying'
         }
     }
-    stages {
-        stage('params') {
+      stage('Example') {
             steps {
                 echo "Hello ${params.PERSON}"
 
@@ -49,6 +48,5 @@ stages {
                 echo "Password: ${params.PASSWORD}"
             }
         }
-    }
 }
 }
